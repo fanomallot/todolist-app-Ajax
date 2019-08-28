@@ -1,0 +1,15 @@
+current directory: /home/dev/Bureau/fax/week8/projet/projetmercredi/todolist-app/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+/home/dev/.rvm/rubies/ruby-2.5.1/bin/ruby -I /home/dev/.rvm/rubies/ruby-2.5.1/lib/ruby/site_ruby/2.5.0 -r ./siteconf20190828-10622-ztavu9.rb extconf.rb
+creating Makefile
+
+current directory: /home/dev/Bureau/fax/week8/projet/projetmercredi/todolist-app/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /home/dev/Bureau/fax/week8/projet/projetmercredi/todolist-app/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.so
+
+current directory: /home/dev/Bureau/fax/week8/projet/projetmercredi/todolist-app/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/bin/install -m 0755 cruby.so ./.gem.20190828-10622-1cfuq2e/bindex

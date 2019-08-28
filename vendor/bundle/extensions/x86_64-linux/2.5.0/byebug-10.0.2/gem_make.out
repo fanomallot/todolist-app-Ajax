@@ -1,0 +1,19 @@
+current directory: /home/dev/Bureau/fax/week8/projet/projetmercredi/todolist-app/vendor/bundle/gems/byebug-10.0.2/ext/byebug
+/home/dev/.rvm/rubies/ruby-2.5.1/bin/ruby -I /home/dev/.rvm/rubies/ruby-2.5.1/lib/ruby/site_ruby/2.5.0 -r ./siteconf20190828-10622-a3uzy9.rb extconf.rb
+creating Makefile
+
+current directory: /home/dev/Bureau/fax/week8/projet/projetmercredi/todolist-app/vendor/bundle/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /home/dev/Bureau/fax/week8/projet/projetmercredi/todolist-app/vendor/bundle/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.so
+
+current directory: /home/dev/Bureau/fax/week8/projet/projetmercredi/todolist-app/vendor/bundle/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -m 0755 byebug.so ./.gem.20190828-10622-1xhf3ku/byebug
