@@ -1,0 +1,8 @@
+<li id="<%=task.id%>">
+    <%= task.title  %>
+    <% unless task.deadline.nil? %>
+      , to read: <%= task.deadline.strftime('%D')  %>
+    <% end %>
+
+   <a href="<%=task_path(task.id)%>" data-method='delete' data-remote=true><img src="https://www.shareicon.net/data/2016/11/14/852498_trash_512x512.png" width="25" height="30"></a>
+</li>

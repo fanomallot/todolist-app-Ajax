@@ -1,0 +1,8 @@
+$(document).ready(function() {
+// Mets ici ton code
+var style = $("<%= j render 'task', task: @task %>").hide().fadeIn(1000);
+$("#<%=@category.title.split(" ")[0]%>").append(style);
+$('.form-control').val("");
+// alert("vcxvv");
+
+});
