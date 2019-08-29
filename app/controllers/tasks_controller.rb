@@ -32,7 +32,7 @@ before_action :authenticate_user!
 
   def update
     @task = Task.find(params[:id])
- 
+    @name = params[:name]
     @task.update(status: params[:name])
 
     @task.update(task_params)

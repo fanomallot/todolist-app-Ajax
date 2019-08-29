@@ -1,0 +1,14 @@
+$(document).ready(function() {
+		var retour = "<%=@task.status%>" ;
+		console.log(retour);
+	if (retour === "true") {
+		$("#<%=@task.id%>").css({"text-decoration": "line-through"});
+		alert('create');
+		retour = "" ;
+	}else {
+		$("#<%=@task.id%>").css({"text-decoration": "none"});
+		alert('dqsvfsqdfqs');
+		retour = "true";
+
+	}
+});
