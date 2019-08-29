@@ -14,6 +14,7 @@
           , to read: <%= task.deadline.strftime('%D')  %>
         <% end %>
        <a href="<%=task_path(task.id)%>" data-method='delete' data-remote=true><img src="https://www.shareicon.net/data/2016/11/14/852498_trash_512x512.png" width="25" height="30"></a>
+       <%= check_box_tag :name, 1, task.status , data: { remote: true, url: task_path(task.id), params: { id:task.id , status: task.status}.to_param, method: "put" }%>
       </li>
       <% end %>
     </ul>
