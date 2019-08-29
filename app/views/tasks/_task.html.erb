@@ -5,6 +5,4 @@
     <% end %>
 
    <a href="<%=task_path(task.id)%>" data-method='delete' data-remote=true><img src="https://www.shareicon.net/data/2016/11/14/852498_trash_512x512.png" width="25" height="30"></a>
-    <%= check_box_tag :name, 1, @tasks.status , data: { remote: true, url: task_path(@task.id), params: { id:@tasks.id , status: @tasks.status}.to_param, method: "put" }%>
-
 </li>

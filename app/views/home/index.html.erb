@@ -8,14 +8,25 @@
   <div class="card">
     <ul id="<%=category.title.split(" ")[0]%>">
       <% category.tasks.each do |task|  %>
-      <li id="<%=task.id%>">
-      <%= task.title  %>
-        <% unless task.deadline.nil? %>
-          , to read: <%= task.deadline.strftime('%D')  %>
-        <% end %>
-       <a href="<%=task_path(task.id)%>" data-method='delete' data-remote=true><img src="https://www.shareicon.net/data/2016/11/14/852498_trash_512x512.png" width="25" height="30"></a>
-       <%= check_box_tag :name, 1, task.status , data: { remote: true, url: task_path(task.id), params: { id:task.id , status: task.status}.to_param, method: "put" }%>
-      </li>
+      <%if task.status === true %>
+        <li id="<%=task.id%>" class='lt' >
+        <%= task.title  %>
+          <% unless task.deadline.nil? %>
+            , to read: <%= task.deadline.strftime('%D')  %>
+          <% end %>
+         <a href="<%=task_path(task.id)%>" data-method='delete' data-remote=true><img src="https://www.shareicon.net/data/2016/11/14/852498_trash_512x512.png" width="25" height="30"></a>
+         <%= check_box_tag :name, 1, task.status , data: { remote: true, url: task_path(task.id), params: { id:task.id , status: task.status}.to_param, method: "put" }%>
+        </li>
+      <%else%>
+         <li id="<%=task.id%>" >
+        <%= task.title  %>
+          <% unless task.deadline.nil? %>
+            , to read: <%= task.deadline.strftime('%D')  %>
+          <% end %>
+         <a href="<%=task_path(task.id)%>" data-method='delete' data-remote=true><img src="https://www.shareicon.net/data/2016/11/14/852498_trash_512x512.png" width="25" height="30"></a>
+         <%= check_box_tag :name, 1, task.status , data: { remote: true, url: task_path(task.id), params: { id:task.id , status: task.status}.to_param, method: "put" }%>
+        </li>
+      <%end%>
       <% end %>
     </ul>
   </div>
